@@ -1,0 +1,37 @@
+<!DOCETYPE html>
+<html>
+	<head>
+		<title>timewatch</title>
+	</head>
+	<body>
+	<style>
+		body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:90vh;
+			background-color:blue;
+		}
+		.watch{
+			background-color:#fff;
+			padding:20px
+			width:400px
+		}
+		.watch ol{
+			height:100px;
+			overflow-y:scroll;
+		}
+		</style>
+		<div class="watch">
+			<h1>00:00:00</h1>
+			<button onclick="start()" class="start">start</button>
+			<button onclick="stop()" class="stop">stop</button>
+			<button onclick="restart()" class="restart">restart</button>
+			<button onclick="lap()">lap</button>
+			<ol>
+				
+			</ol>
+		</div>
+		<script src='time.js'></script>
+	</body>
+</html>
